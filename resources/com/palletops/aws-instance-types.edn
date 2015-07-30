@@ -1,0 +1,451 @@
+{:t2.micro
+ {:cpus 1
+  :ram 1                                ; 1Gb
+  :disks []
+  :io :moderate
+  :processor #{:xeon}
+  :clock [:_ 3.4]
+  :features #{:avx :intel-turbo}
+  }
+ :t2.small
+ {:cpus 1
+  :ram 2
+  :disks []
+  :io :moderate
+  :processor #{:xeon}
+  :clock [:_ 3.4]
+  :features #{:avx :intel-turbo}
+  }
+ :t2.medium
+ {:cpus 2
+  :ram 4
+  :disks []
+  :io :moderate
+  :processor #{:xeon}
+  :clock [:_ 3.4]
+  :features #{:avx :intel-turbo}
+  }
+ :t2.large
+ {:cpus 2
+  :ram 8
+  :disks []
+  :io [:low :moderate]
+  :processor #{:xeon}
+  :clock [:_ 3.0]
+  :features #{:avx :intel-turbo}
+  }
+ :m4.large
+ {:cpus 2
+  :ram 8
+  :disks []
+  :io :moderate
+  :processor #{:xeon-E5-2676-v3}
+  :clock 2.4
+  :features #{:avx :avx2 :ebs-opt :enh-network :intel-turbo} }
+ :m4.xlarge
+ {:cpus 4
+  :ram 16
+  :disks []
+  :io :high
+  :processor #{:xeon-E5-2676-v3}
+  :clock 2.4
+  :features #{:avx :avx2 :ebs-opt :enh-network :intel-turbo} }
+ :m4.2xlarge
+ {:cpus 8
+  :ram 32
+  :disks []
+  :io :high
+  :processor #{:xeon-E5-2676-v3}
+  :clock 2.4
+  :features #{:avx :avx2 :ebs-opt :enh-network :intel-turbo} }
+ :m4.4xlarge
+ {:cpus 16
+  :ram 64
+  :disks []
+  :io :high
+  :processor #{:xeon-E5-2676-v3}
+  :clock 2.4
+  :features #{:avx :avx2 :ebs-opt :enh-network :intel-turbo} }
+ :m4.10xlarge
+ {:cpus 40
+  :ram 160
+  :disks []
+  :io :10-gigabit
+  :processor #{:xeon-E5-2676-v3}
+  :clock 2.4
+  :features #{:avx :avx2 :ebs-opt :enh-network :intel-turbo} }
+ :m3.medium
+ {:cpus 1
+  :ram 3.75
+  :disks [{:size 4 :type :ssd}]
+  :io :moderate
+  :processor #{:xeon-E5-2670-v2}
+  :clock 2.5
+  :features #{:avx :intel-turbo} }
+ :m3.large
+ {:cpus 2
+  :ram 7.5
+  :disks [{:size 32 :type :ssd}]
+  :io :moderate
+  :processor #{:xeon-E5-2670-v2}
+  :clock 2.5
+  :features #{:avx :intel-turbo} }
+ :m3.xlarge
+ {:cpus 4
+  :ram 15
+  :disks [{:size 40 :type :ssd} {:size 40 :type :ssd}]
+  :io :high
+  :processor #{:xeon-E5-2670-v2}
+  :clock 2.5
+  :features #{:avx :intel-turbo :ebs-opt} }
+ :m3.2xlarge
+ {:cpus 8
+  :ram 30
+  :disks [{:size 80 :type :ssd} {:size 80 :type :ssd}]
+  :io :high
+  :processor #{:xeon-E5-2670-v2}
+  :clock 2.5
+  :features #{:avx :intel-turbo :ebs-opt}}
+
+
+
+
+ :c4.large
+ {:cpus 2
+  :ram 3.75
+  :disks []
+  :io :moderate
+  :processor #{:xeon-e5-2666-v3}
+  :clock 2.9
+  :features #{:avx :avx2 :ebs-opt :enh-network :intel-turbo}}
+ :c4.xlarge
+ {:cpus 4
+  :ram 7.5
+  :disks []
+  :io :high
+  :processor #{:xeon-e5-2666-v3}
+  :clock 2.9
+  :features #{:avx :avx2 :ebs-opt :enh-network :intel-turbo}}
+ :c4.2xlarge
+ {:cpus 8
+  :ram 15
+  :disks []
+  :io :high
+  :processor #{:xeon-e5-2666-v3}
+  :clock 2.9
+  :features #{:avx :avx2 :ebs-opt :enh-network :intel-turbo}}
+ :c4.4xlarge
+ {:cpus 16
+  :ram 30
+  :disks []
+  :io :high
+  :processor #{:xeon-e5-2666-v3}
+  :clock 2.9
+  :features #{:avx :avx2 :ebs-opt :enh-network :intel-turbo}}
+ :c4.8xlarge
+ {:cpus 36
+  :ram 60
+  :disks []
+  :io :10-gigabit
+  :processor #{:xeon-e5-2666-v3}
+  :clock 2.9
+  :features #{:avx :avx2 :ebs-opt :enh-network :intel-turbo}}
+ :c3.large
+ {:cpus 2
+  :ram 3.75
+  :disks [{:count 2 :size 16 :type :ssd}]
+  :io :moderate
+  :processor #{:xeon-e5-2680-v2}
+  :clock 2.8
+  :features #{:avx :intel-turbo :enh-network}}
+ :c3.xlarge
+ {:cpus 4
+  :ram 7.5
+  :disks [{:count 2 :size 40 :type :ssd}]
+  :io :moderate
+  :processor #{:xeon-e5-2680-v2}
+  :clock 2.8
+  :features #{:avx :intel-turbo :ebs-opt :enh-network}}
+ :c3.2xlarge
+ {:cpus 8
+  :ram 15
+  :disks [{:count 2 :size 80 :type :ssd}]
+  :io :high
+  :processor #{:xeon-e5-2680-v2}
+  :clock 2.8
+  :features #{:avx :intel-turbo :ebs-opt :enh-network}}
+ :c3.4xlarge
+ {:cpus 16
+  :ram 30
+  :disks [{:count 2 :size 160 :type :ssd}]
+  :io :high
+  :processor #{:xeon-e5-2680-v2}
+  :clock 2.8
+  :features #{:avx :intel-turbo :ebs-opt :enh-network}}
+ :c3.8xlarge
+ {:cpus 32
+  :ram 60
+  :disks [{:count 2 :size 320 :type :ssd}]
+  :io :10-gigabit
+  :processor #{:xeon-e5-2680-v2}
+  :clock 2.8
+  :features #{:avx :intel-turbo :enh-network}}
+ :g2.2xlarge
+ {:cpus 8
+  :ram 15
+  :disks [{:count 1 :size 60 :type :ssd}]
+  :io :high
+  :processor #{:xeon-e5-2670-2.6}
+  :features #{:avx :intel-turbo :ebs-opt}}
+ :g2.8xlarge
+ {:cpus 32
+  :ram 60
+  :disks [{:count 2 :size 120 :type :ssd}]
+  :io :10-gigabit
+  :processor #{:xeon-e5-2670-2.6}
+  :features #{:avx :intel-turbo} }
+ :r3.large
+ {:cpus 2
+  :ram 15.25
+  :disks [{:count 1 :size 32 :type :ssd}]
+  :io :moderate
+  :processor #{:xeon-e5-2670-v2}
+  :clock 2.5 :features #{:avx :intel-turbo :enh-network}}
+ :r3.xlarge
+ {:cpus 4
+  :ram 30.5
+  :disks [{:count 1 :size 80 :type :ssd}]
+  :io :moderate
+  :processor #{:xeon-e5-2670-v2}
+  :clock 2.5 :features #{:avx :intel-turbo :ebs-opt :enh-network}}
+ :r3.2xlarge
+ {:cpus 8
+  :ram 61
+  :disks [{:count 1 :size 160 :type :ssd}]
+  :io :high
+  :processor #{:xeon-e5-2670-v2}
+  :clock 2.5 :features #{:avx :intel-turbo :ebs-opt :enh-network}}
+ :r3.4xlarge
+ {:cpus 16
+  :ram 122
+  :disks [{:count 1 :size 320 :type :ssd}]
+  :io :high
+  :processor #{:xeon-e5-2670-v2}
+  :clock 2.5 :features #{:avx :intel-turbo :ebs-opt :enh-network}}
+ :r3.8xlarge
+ {:cpus 32
+  :ram 244
+  :disks [{:count 2 :size 320 :type :ssd}]
+  :io :10-gigabit
+  :processor #{:xeon-e5-2670-v2}
+  :clock 2.5 :features #{:avx :intel-turbo :enh-network}}
+ :i2.xlarge
+ {:cpus 4
+  :ram 30.5
+  :disks [{:count 1 :size 800 :type :ssd}]
+  :io :moderate
+  :processor #{:xeon-e5-2670-v2}
+  :clock 2.5
+  :features #{:avx :intel-turbo :ebs-opt :enh-network}}
+ :i2.2xlarge
+ {:cpus 8
+  :ram 61
+  :disks [{:count 2 :size 800 :type :ssd}]
+  :io :high
+  :processor #{:xeon-e5-2670-v2}
+  :clock 2.5
+  :features #{:avx :intel-turbo :ebs-opt :enh-network}}
+ :i2.4xlarge
+ {:cpus 16
+  :ram 122
+  :disks [{:count 4 :size 800 :type :ssd}]
+  :io :high
+  :processor #{:xeon-e5-2670-v2}
+  :clock 2.5
+  :features #{:avx :intel-turbo :ebs-opt :enh-network}}
+ :i2.8xlarge
+ {:cpus 32
+  :ram 244
+  :disks [{:count 8 :size 800 :type :ssd}]
+  :io :10-gigabit
+  :processor #{:xeon-e5-2670-v2}
+  :clock 2.5
+  :features #{:avx :intel-turbo :enh-network}}
+ :d2.xlarge
+ {:cpus 4
+  :ram 30.5
+  :disks [{:count 3 :size 2000}]
+  :io :moderate
+  :processor #{:xeon-E5-2676-v3}
+  :clock 2.4
+  :features #{:avx :avx2 :ebs-opt :enh-network :intel-turbo}}
+ :d2.2xlarge
+ {:cpus 8
+  :ram 61
+  :disks [{:count 6 :size 2000}]
+  :io :high
+  :processor #{:xeon-E5-2676-v3}
+  :clock 2.4
+  :features #{:avx :avx2 :ebs-opt :enh-network :intel-turbo}}
+ :d2.4xlarge
+ {:cpus 16
+  :ram 122
+  :disks [{:count 12 :size 2000}]
+  :io :high
+  :processor #{:xeon-E5-2676-v3}
+  :clock 2.4
+  :features #{:avx :avx2 :ebs-opt :enh-network :intel-turbo}}
+ :d2.8xlarge
+ {:cpus 36
+  :ram 244
+  :disks [{:count 24 :size 2000}]
+  :io :10-gigabit
+  :processor #{:xeon-E5-2676-v3}
+  :clock 2.4
+  :features #{:avx :avx2 :ebs-opt :enh-network :intel-turbo}}
+
+
+ ;; :m3.xlarge
+ ;; {:ram 15                    ;  GiB memory
+ ;;  :cpus 4    ; 13 Compute Units (4 virtual cores with 3.25 Compute Units each)
+ ;;  :disks []
+ ;;
+ ;;  :io :moderate
+ ;;  :features #{}}
+
+ ;; :m3.2xlarge
+ ;; {:ram 30                    ; GiB memory
+ ;;  :cpus 8    ; 26 Compute Units (8 virtual cores with 3.25 Compute Units each)
+ ;;  :disks []
+ ;;
+ ;;  :io :high
+ ;;  :features #{}}
+
+
+
+
+
+
+
+ :m1.small
+ {:ram 1.7                              ; GiB memory
+  :cpus 1 ; 1 EC2 Compute Unit (1 virtual core with 1 EC2 Compute Unit)
+  :disks [{:size 160}]                  ; GB instance storage
+  :32-bit true
+
+  :io :moderate
+  :features #{}}
+
+ ;; :m1.medium
+ ;; {:ram 3.75                  ;  GiB memory
+ ;;  :cpus 1          ; EC2 Compute Unit (1 virtual core with 2 EC2 Compute Unit)
+ ;;  :disks [{:size 410}]                ; GB instance storage
+ ;;  :32-bit true
+ ;;
+ ;;  :io :moderate
+ ;;  :features #{}}
+
+ :m1.large
+ {:ram 7.5                              ; GiB memory
+  :cpus 2 ; 4 Compute Units (2 virtual cores with 2 EC2 Compute Units each)
+  :disks [{:size 850}]                  ; GB instance storage
+
+  :io :high
+  :features #{:ebs-opt}}                   ; Mbps
+
+ :m1.xlarge
+ {:ram 15                               ; GiB memory
+  :cpus 4 ; 8 Compute Units (4 virtual cores with 2 EC2 Compute Units each)
+  :disks [{:size 1690}]                 ; GB instance storage
+
+  :io :high
+  :features #{:ebs-opt}}                  ; Mbps
+
+
+ ;; :t1.micro
+ ;; {:ram (/ 613 1024.0)  ; MiB memory
+ ;;  :cpus 1              ; Up to 2 EC2 Compute Units (for short periodic bursts)
+ ;;  :disks []
+ ;;  :32-bit true
+ ;;
+ ;;  :io :low
+ ;;  :features #{}}
+
+ :m2.xlarge
+ {:ram 17.1                             ; GiB of memory
+  :cpus 2 ; 6.5 Compute Units (2 virtual cores with 3.25 Compute Units each)
+  :disks [{:size 420}]                  ; GB of instance storage
+
+  :io :moderate
+  :features #{}}
+
+ :m2.2xlarge
+ {:ram 34.2                             ; GiB of memory
+  :cpus 4 ; 13 Compute Units (4 virtual cores with 3.25 Compute Units each)
+  :disks [{:size 850}]                  ; GB of instance storage
+
+  :io :high
+  :features #{}}
+
+ ;; :m2.4xlarge
+ ;; {:ram 68.4                  ; GiB of memory
+ ;;  :cpus 8    ; 26 Compute Units (8 virtual cores with 3.25 Compute Units each)
+ ;;  :disks [{:size 1690}]               ; GB of instance storage
+ ;;
+ ;;  :io :High
+ ;;  :features #{:ebs-opt}} ; Mbps
+
+ :c1.medium
+ {:ram 1.7                              ; GiB of memory
+  :cpus 2 ; 5 Compute Units (2 virtual cores with 2.5 Compute Units each)
+  :disks [{:size 350}]                  ; GB of instance storage
+  :32-bit true
+
+  :io :moderate
+  :features #{}}
+
+ :c1.xlarge
+ {:ram 7                                ; GiB of memory
+  :cpus 8 ; 20 EC2 Compute Units (8 virtual cores with 2.5 Compute Units each)
+  :disks [{:size 1690}]                 ; GB of instance storage
+
+  :io :high
+  :features #{}}
+
+ :cc1.4xlarge
+ {:ram 23                      ; GiB of memory
+  :cpus 8 ; 33.5 EC2 Compute Units (2 x Intel Xeon X5570,
+                                        ; quad-core “Nehalem” architecture)
+  :disks [{:size 1690}]                 ; GB of instance storage
+
+  :io :very-high                        ; (10 Gigabit Ethernet)
+  :features #{}}
+
+ :cc2.8xlarge
+ {:ram 60.5                    ; GiB of memory
+  :cpus 16 ; 88 EC2 Compute Units (2 x Intel Xeon E5-2670,
+                                        ;eight-core "Sandy Bridge" architecture)
+  :disks [{:size 3370}]                 ; GB of instance storage
+
+  :io :very-high                        ; (10 Gigabit Ethernet)
+  :features #{}}
+
+ :cg1.4xlarge
+ {:ram 22                      ; GiB of memory
+  :cpus 8 ; 33.5 EC2 Compute Units (2 x Intel Xeon X5570,
+                                        ; quad-core “Nehalem” architecture)
+                                        ; 2 x NVIDIA Tesla “Fermi” M2050 GPUs
+  :disks [{:size 1690}]                 ; GB of instance storage
+
+  :io :very-high                        ; (10 Gigabit Ethernet)
+  :features #{}}
+
+ ;; :hi1.4xlarge
+ ;; {:ram 60.5                ; GiB of memory
+ ;;  :cpus [{:cores 16}]               ; 35 EC2 Compute Units (16 virtual cores*)
+ ;;  :disks [{:size 1024}{:size 1024}] ; 2 SSD-based volumes each with 1024 GB
+ ;;                                      ; of instance storage
+ ;;
+ ;;  :io :very-high                      ; (10 Gigabit Ethernet)
+ ;;  :features #{}}
+ }

@@ -1,0 +1,29 @@
+{
+  "name": "aws-instance-types",
+  "version": "0.1.1",
+  "description": "AWS Instance Type Data",
+  "main": "target/aws-instance-types.js",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node js/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/palletops/aws-instance-types.git"
+  },
+  "keywords": [
+    "aws",
+    "instance",
+    "types",
+    "sizes"
+  ],
+  "author": "Hugo Duncan <hugo@hugoduncan.org>",
+  "license": "EPL-1.0",
+  "bugs": {
+    "url": "https://github.com/palletops/aws-instance-types/issues"
+  },
+  "homepage": "https://github.com/palletops/aws-instance-types#readme"
+}
