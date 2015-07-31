@@ -11,12 +11,27 @@ available, such as [amazon-pricing][amazon-pricing].
 ## Usage
 
 To use the EDN data, add a dependency on
-`[com.palletops/aws-instance-types "0.1.0"]`, which will use the
-[published jar][data-edn] which is on [clojars][clojars].
+`[com.palletops/aws-instance-types "0.1.1"]`, which will use the
+[published jar][data-edn] which is on [clojars][clojars].  The data is available
+as a resource at `com/palletops/aws=instance-types.edn`, and can be loaded with:
 
-To use the JSON data, use the [aws-instance-types][data-npm] package, which is
-on [npm][npm].  The data is returned by the package's `instanceTypes`
-function.
+```clj
+(-> "com/palletops/aws-instance-types.edn"
+    io/resource
+    io/reader
+    load-reader)
+```
+
+To use the JSON data, install the [aws-instance-types][data-npm]
+package with [npm][npm], e.g. `npm install aws-instance-types`.  The
+data is returned by the package's `instanceTypes` function.
+
+```js
+var awsInstanceTypes = require('aws-instance-types');
+
+var output = awsInstanceTypes.instanceTypes();
+console.log(output);
+```
 
 ## License
 
