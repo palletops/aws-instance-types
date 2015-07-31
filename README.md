@@ -11,7 +11,7 @@ available, such as [amazon-pricing][amazon-pricing].
 ## Usage
 
 To use the EDN data, add a dependency on
-`[com.palletops/aws-instance-types "0.1.0"]`, which will use the
+`[com.palletops/aws-instance-types "0.1.1"]`, which will use the
 [published jar][data-edn] which is on [clojars][clojars].  The data is available
 as a resource at `com/palletops/aws=instance-types.edn`, and can be loaded with:
 
