@@ -18,9 +18,8 @@ as a resource at `com/palletops/aws=instance-types.edn`, and can be loaded with:
 ```clj
 (-> "com/palletops/aws-instance-types.edn"
     io/resource
-    io/file
-    .getCanonicalPath
-    load-file)
+    io/reader
+    load-reader)
 ```
 
 To use the JSON data, install the [aws-instance-types][data-npm]
