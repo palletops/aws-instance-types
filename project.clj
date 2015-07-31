@@ -1,4 +1,4 @@
-(defproject com.palletops/aws-instance-types "0.1.1"
+(defproject com.palletops/aws-instance-types "0.1.2-SNAPSHOT"
   :description "AWS Instance Type Data"
   :url "https://github.com/palletops/aws-instance-types"
   :license {:name "Eclipse Public License"
